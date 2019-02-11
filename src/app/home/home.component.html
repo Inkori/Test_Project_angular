@@ -1,0 +1,62 @@
+<!-- <div class="wrapper">
+    <div class="page-content">
+
+<app-header></app-header>
+<div class="page-container"><app-sidebar></app-sidebar></div>
+
+<router-outlet></router-outlet>
+
+</div>
+</div> -->
+<div class="wrapper">
+    <div class="page-container">
+      <div class="nav">
+        <a href="#" class="logo">
+          <img src="#" alt="image" class="logo-img" />
+        </a>
+        <ul class="nav-list">
+          <li class="nav-item active">
+            <a routerLink="Dashboard" class="nav-link">
+              <i class="fas fa-tachometer-alt"></i>
+              <span >Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="Devices" class="nav-link">
+              <i class="fas fa-desktop"></i>
+              <span >Devices</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="Configuration" class="nav-link">
+              <i class="fas fa-cogs"></i>
+              <span >Configuration</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-content">
+        <header class="header">
+          <div class="header-top">
+            <button type="button" class="notifications">
+              <i class="fas fa-bell"></i>
+            </button>
+            <button type="button" class="contacts">
+              <i class="fas fa-question-circle"></i>
+            </button>
+            <button type="button" class="user">
+              <img src="#" alt="image" class="user-photo"/>
+            </button>
+          </div>
+          <div class="header-bottom">
+            <span class="title">Home</span>
+          </div>
+        </header>
+        <main class="main">
+          <section class="section">
+              <router-outlet></router-outlet>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
