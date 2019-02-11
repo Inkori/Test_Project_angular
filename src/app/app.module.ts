@@ -18,7 +18,6 @@ import { ConfigurationModule } from './module/configuration/configuration.module
   ],
   imports: [
     BrowserModule,
-
     HomeModule,
     DashboardModule,
     DevicesModule,
